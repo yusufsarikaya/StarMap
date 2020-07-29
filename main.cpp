@@ -22,9 +22,9 @@ static void findMatchingRect(cv::Mat, cv::Mat);
 
 int main(int argc, const char * argv[]) {
     cv::Mat image1, image2, image3;
-    image1 = cv::imread("/Users/yusufsarikaya/Desktop/XCODE_PROJ/StarMap/Images/StarMap.png", cv::IMREAD_GRAYSCALE);
-    image2 = cv::imread("/Users/yusufsarikaya/Desktop/XCODE_PROJ/StarMap/Images/Small_area.png", cv::IMREAD_GRAYSCALE);
-    image3 = cv::imread("/Users/yusufsarikaya/Desktop/XCODE_PROJ/StarMap/Images/Small_area_rotated.png", cv::IMREAD_GRAYSCALE);
+    image1 = cv::imread("...PathOfImage/StarMap.png", cv::IMREAD_GRAYSCALE);
+    image2 = cv::imread("...PathOfImage/Small_area.png", cv::IMREAD_GRAYSCALE);
+    image3 = cv::imread("...PathOfImage/Small_area_rotated.png", cv::IMREAD_GRAYSCALE);
     if( !image1.data || !image2.data || !image3.data)
     {
       cerr << " Failed to load images." << endl;
